@@ -43,7 +43,7 @@ class TGbot:
     def push_news(self):
         '''开始推送消息'''
         if self.news['count']>0:
-            bot = telegram.Bot(token='995660322:AAHgcxsU51K9CHaGg-E5BsNmasVfgvunFA4')
+            bot = telegram.Bot(token='123456789:AAHgcxsU51K9CHaGg-E5BsNmasVfgvunXB4')
             for msg in self.news['data']:
                 bot.send_message(chat_id='@dailynewsyc',
                     text='<b>消息: {id}\n标签: {tag}\n时间：{time}</b>\n\n{text}.'.format(id=msg[0],time=msg[1],tag=msg[2],text=msg[3]),
